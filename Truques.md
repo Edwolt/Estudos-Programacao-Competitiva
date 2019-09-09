@@ -9,3 +9,11 @@ O `printf` e `scanf` ainda é mais rápido
 ios::sync_with_stdio(false);
 cin.tie(NULL);
 ```
+# Questões com 10<sup>9</sup>+7
+Esse número serve para fazer não da overflow
+Use as propiedades:
+
+- (a+b) % c = a%c + b%c
+- (a-b) % c = a%c - b%c
+- (ab) % c = (a%c)(b%c)
+- (a/b) % c &ne; (a%c)/(b%c)
