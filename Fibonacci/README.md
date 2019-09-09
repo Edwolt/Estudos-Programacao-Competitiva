@@ -21,4 +21,5 @@ Complexidade: O(m<sup>3</sup> log(n)), que é o gasto para elevar a matriz a n
 # Fórmula
 É muito difícil que essa implementação seja viável, pois requer que tenha a formula de antemão\
 Tendo a fórmula, é possível provar que ela funciona com indução matemática\
-Complexidade: O(1)
+Complexidade: O(1)\
+Formula: f(n) = (1 / sqrt(5)){[(1 + sqrt(5))/2]^n - [(1 - sqrt(5))/2]^n}
