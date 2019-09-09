@@ -27,7 +27,7 @@ Eu posso dizer que os valores finais do vetor f na nº posição e i os valores 
 Tendo a fórmula, é possível provar que ela funciona com indução matemática\
 
 - Complexidade: O(1)
-- Formula:\
+- Formula:
 <img alt="Formula Fechada Fiboncci" src="http://latex.codecogs.com/svg.latex?f(n)=\frac{1}{\sqrt5}\left[\left(\frac{1+\sqrt5}{2}\right)^n-%20\left(\frac{1-\sqrt%205}{2}%20\right)^n\right]" border="0">
 <!-- 
 f(n) = (1 / sqrt(5)){[(1 + sqrt(5))/2]^n - [(1 - sqrt(5))/2]^n}
