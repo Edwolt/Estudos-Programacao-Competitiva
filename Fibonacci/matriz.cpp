@@ -8,8 +8,8 @@ using namespace std;
  *  | F(n)   |  =  | 1  1 | * | F(n-1) |  =  | F(n-1) + F(n-2) |
  *  | F(n-1) |     | 1  0 |   | F(n-2) |     | F(n-1)          |
  * 
- *  | F(n)   |  =  | 1  1 |^n * | 1 |
- *  | F(n-1) |     | 1  0 |     | 1 |
+ *  | F(n)   |  =  | 1  1 |^(n-2) * | 1 |
+ *  | F(n-1) |     | 1  0 |         | 1 |
  */
 
 struct Matriz
@@ -31,6 +31,7 @@ struct Matriz
                 }
             }
         }
+        return res;
     }
 
     Matriz pow(int n)
@@ -40,7 +41,7 @@ struct Matriz
             return *this;
         }
         Matriz res = this->pow(n / 2);
-        if (n % 0)
+        if (n % 2 == 0)
         {
             return res * res;
         }
@@ -60,12 +61,27 @@ int main()
         {{1, 1},
          {1, 0}}};
 
-    m.pow(n);
+    if (n <= 2)
+    {
+        cout << 1 << endl;
+        return 0;
+    }
+    m = m.pow(n-2);
 
     ll res = 0;
     for (int i = 0; i < TAM; i++)
     {
         res += m.mat[0][i];
     }
-    cout << m.mat[0][0] + res;
+
+    for (int i = 0; i < TAM; i++)
+    {
+        for (int j = 0; j < TAM; j++)
+        {
+            cout << m.mat[i][j] << " ";
+        }
+        cout << endl;
+    }
+
+    cout << res << endl;
 }
