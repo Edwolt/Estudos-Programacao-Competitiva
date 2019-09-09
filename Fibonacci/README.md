@@ -5,6 +5,7 @@ Complexidade: O(2<sup>n</sup>), se você aproximar que f(n) tem mesmo tamanho qu
 # Programação Dinâmica
 É uma recursão, porém os valores que já encontramos é salvo em um array\
 Útil para os casos em que não sabemos como sair da implementação recursiva\
+Pode ser complicado usar se o array tiver que ser muito grande\
 Complexidade: O(?), pois a complexidade é igual à uma dfs em um grafo
 
 # Iteratica
