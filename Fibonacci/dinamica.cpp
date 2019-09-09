@@ -3,6 +3,7 @@ using namespace std;
 
 #define ll unsigned long long
 const int MAXN = 1e5;
+
 ll dp[MAXN];
 
 ll fibonacci(int n)
