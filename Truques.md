@@ -9,6 +9,10 @@ O `printf` e `scanf` ainda é mais rápido
 ios::sync_with_stdio(false);
 cin.tie(NULL);
 ```
+# Frequência
+Se o importante é saber o número de vezes que um número aparece, array de frequência é uma boa
+Se tiver muitos valores, pode ser necessário usar um map
+
 # Questões com 10<sup>9</sup>+7
 Esse número serve para fazer não da overflow
 Use as propiedades:
