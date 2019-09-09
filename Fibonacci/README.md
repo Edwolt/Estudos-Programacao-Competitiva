@@ -10,7 +10,7 @@ Pode ser complicado usar se o array tiver que ser muito grande
 
 Complexidade: O(?), pois a complexidade é igual à uma dfs em um grafo
 
-# Iteratica
+# Iterativa
 Basicamente um for\
 Para fibonacci é facil fazer isso, mas isso não acontece sempre
 
