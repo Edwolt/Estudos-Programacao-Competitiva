@@ -26,8 +26,8 @@ Complexidade: O(m<sup>3</sup> log(n)), que é o gasto para elevar a matriz a n
 É muito difícil que essa implementação seja viável, pois requer que tenha a formula de antemão\
 Tendo a fórmula, é possível provar que ela funciona com indução matemática\
 
-Complexidade: O(1)
-Formula:
+Complexidade: O(1)\
+Formula:\
 <img alt="Formula Fechada Fiboncci" src="http://latex.codecogs.com/svg.latex?f(n)=\frac{1}{\sqrt5}\left[\left(\frac{1+\sqrt5}{2}\right)^n-%20\left(\frac{1-\sqrt%205}{2}%20\right)^n\right]" border="0">
 <!-- 
 f(n) = (1 / sqrt(5)){[(1 + sqrt(5))/2]^n - [(1 - sqrt(5))/2]^n}
