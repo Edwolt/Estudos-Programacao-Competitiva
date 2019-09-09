@@ -17,7 +17,7 @@ Se eu encontrar uma matriz M, quadrada de dimensões m, para o qual o vetor p co
 Eu posso dizer que os valores finais do vetor f na nº posição e i os valores iniciais, f é dado por f = M<sup>n</sup> * i
 Complexidade: O(m<sup>3</sup> log(n)), que é o gasto para elevar a matriz a n
 
-# Formula
+# Fórmula
 É muito difícil que essa implementação seja viável, pois requer que tenha a formula de antemão
 Tendo a fórmula, é possível provar que ela funciona com indução matemática
 Complexidade: O(1)
