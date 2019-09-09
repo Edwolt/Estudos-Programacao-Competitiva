@@ -22,7 +22,7 @@ Eu posso dizer que os valores finais do vetor f na nº posição e i os valores 
 
 Complexidade: O(m<sup>3</sup> log(n)), que é o gasto para elevar a matriz a n\
 Formula:\
-<img alt="" src="http://latex.codecogs.com/svg.latex?\begin{bmatrix}F(n)\\F(n-1)\end{bmatrix}=\begin{bmatrix}1&1\\1&0\end{bmatrix}\begin{bmatrix}F(n-1)\\F(n-2)\end{bmatrix}=\begin{bmatrix}F(n-1)\cdot%20F(n-2)\\F(n-1)\end{bmatrix}\newline\newline\Rightarrow\begin{bmatrix}F(n)\\F(n-1)\end{bmatrix}=\begin{bmatrix}1&1\\1&0\end{bmatrix}^n\begin{bmatrix}1\\1\end{bmatrix}=\begin{bmatrix}a&b\\c&d\end{bmatrix}\begin{bmatrix}1\\1\end{bmatrix}\newline\newline\Rightarrow%20F(n)=a+b" border="0">
+<img alt="" src="http://latex.codecogs.com/svg.latex?\begin{bmatrix}F(n)\\F(n-1)\end{bmatrix}=\begin{bmatrix}1&1\\1&0\end{bmatrix}\begin{bmatrix}F(n-1)\\F(n-2)\end{bmatrix}=\begin{bmatrix}F(n-1)\cdot%20F(n-2)\\F(n-1)\end{bmatrix}\newline\newline\Rightarrow\begin{bmatrix}F(n)\\F(n-1)\end{bmatrix}=\begin{bmatrix}1&1\\1&0\end{bmatrix}^{n-2}\begin{bmatrix}1\\1\end{bmatrix}=\begin{bmatrix}a&b\\c&d\end{bmatrix}\begin{bmatrix}1\\1\end{bmatrix}\newline\newline\Rightarrow%20F(n)=a+b" border="0">
 
 <!--
 |F(n)  | = |1  1| |F(n-1)| = |F(n-1) + F(n-2)|
@@ -61,7 +61,7 @@ F(n-1)
 \begin{bmatrix}
 1 & 1 \\ 
 1 & 0
-\end{bmatrix}^n
+\end{bmatrix}^{n-2}
 \begin{bmatrix}
 1 \\
 1
