@@ -74,14 +74,5 @@ int main()
         res += m.mat[0][i];
     }
 
-    for (int i = 0; i < TAM; i++)
-    {
-        for (int j = 0; j < TAM; j++)
-        {
-            cout << m.mat[i][j] << " ";
-        }
-        cout << endl;
-    }
-
     cout << res << endl;
 }
