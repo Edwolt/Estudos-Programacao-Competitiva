@@ -31,3 +31,10 @@ Use as propiedades:
 Preste atenção que não é necessário que o resultado final exceda o limite para dar overflow\
 Se em qualquer parte da com acontecer um overflow O resultado já estará atrapalhado\
 (um `int` somado a outro `int` retorna um `int` que se tiver seu valor estourado já atrapalha a conta)
+
+# Infinito
+```cpp
+#define INF 0x3f3f3f3f
+```
+`INF` cabe em um `int` e `INF + INF` também\
+`INF * INF` cabe em um `long`
