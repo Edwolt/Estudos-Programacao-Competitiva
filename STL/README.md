@@ -11,9 +11,17 @@
 Disponivel para maioria dos contâiners do STL\
 percorra assim:
 ```cpp
-for (auto i = stl.begin(); i != stl.end(); i++)
+for(auto i = stl.begin(); i != stl.end(); i++)
 {
     *i; // Pega valor para o qual o iterador está apontando
+    /* Código */
+}
+```
+Ou assim
+```cpp
+for(auto i : stl)
+{
+    i; // Pega valor para o qual o iterador está apontando
     /* Código */
 }
 ```
