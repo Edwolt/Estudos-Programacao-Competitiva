@@ -39,6 +39,6 @@ int main()
         int u, v;
         cin >> u >> v;
         grafo[u].push_back(v);
-        grafo[v].push_back(u); // Grafo não orientado
+        grafo[v].push_back(u);
     }
 }
