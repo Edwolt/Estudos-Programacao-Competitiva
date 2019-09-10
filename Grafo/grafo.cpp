@@ -16,6 +16,8 @@ int main()
     {
         int u, v;
         cin >> u >> v;
+
+        // A maioria das vezes o problema começará no 1, então eu subtraio por 1 o u e o v
         grafo[u].push_back(v);
         grafo[v].push_back(u); // Grafo não orientado
     }
