@@ -1,4 +1,4 @@
-# Grafos
+# Visitar Vértices
 
 - DFS (Busca por profundidade)\
 Recursão: vai até o nó mais profundo e depois volta fazendo o mesmo para os outros\
