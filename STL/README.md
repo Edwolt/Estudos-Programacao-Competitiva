@@ -1,11 +1,37 @@
+# Template
+Permite usar uma mesma sequência de passos para vários tipos diferentes de dados\
+O compilador está criando uma função nova toda vez que usamos tipos diferentes no template
+
+
 # Standard Template Library
-- Vector: Acesso O(1), tamanho modificavel, coloca e tira do final em O(1)
-- Pilha: Tira e coloca do topo em O(1)
-- Fila: Tira do inicio e coloca no final em O(1)
-- Deque (Double ended queue): Tira e coloca no inicio e no final em O(1)
-- Par: Associa dois valores
-- Set: Representa um conjunto em que não há item repetido; inserir/remover/buscar é O(log(n))\
-  Está sempre ordenado
+- Vector\
+Acesso O(1)\
+tamanho modificavel\
+coloca e tira do final em O(1)
+
+- Pilha\
+O último a ser empilhado é o primeiro a sair\
+É um "vetor" que não pode ser alterado no meio\
+Tira e coloca do topo em O(1)\
+Obs: Toda recursão pode ser escrita em forma de pilha, na verdade a recursão é uma pilha
+
+- Fila\
+Quem chega primeiro sai primeiro\
+É um "vetor" que não pode ser alterado no meio\
+Tira do inicio e coloca no final em O(1)
+
+- Deque (Double ended queue)\
+Tanto fila quanto pilha\
+Tira e coloca no inicio e no final em O(1)\
+Diferentemente do vector a inserção no inicio é O(1) e não O(n)
+
+- Par\
+Associa dois valores
+
+- Set\
+Representa um conjunto em que não há item repetido; inserir/remover/buscar é O(log(n))\
+Está sempre ordenado
+
 
 # Iteradores
 Disponivel para maioria dos contâiners do STL\
@@ -26,6 +52,7 @@ for(auto i : stl)
 }
 ```
 Existem também os iteradores reversos (stl.rbegin(), stl.rend()): quando incrementados aponta para posição anterior
+
 
 # Sort
 O `sort` está disponivel para qualquer `struct` com a função `operator<` definido

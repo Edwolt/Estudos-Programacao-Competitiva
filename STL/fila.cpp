@@ -1,6 +1,3 @@
-// Quem chega primeiro sai primeiro
-// Coloca item no final e tira do inicio (em O(1))
-
 #include <bits/stdc++.h>
 using namespace std;
 

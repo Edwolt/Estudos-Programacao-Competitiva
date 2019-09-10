@@ -1,8 +1,3 @@
-// É um vetor que não pode ser alterado no meio
-// Só se tira e coloca item no topo (em O(1))
-
-// Obs: Toda recursão pode ser escrita em forma de pilha, na verdade a recursão é uma pilha
-
 #include <bits/stdc++.h>
 using namespace std;
 

@@ -1,5 +1,3 @@
-// O compilador está criando uma função nova toda vez que usamos tipos diferentes no template
-
 #include <bits/stdc++.h>
 using namespace std;
 

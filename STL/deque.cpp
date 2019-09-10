@@ -1,7 +1,3 @@
-// Tanto fila quanto pilha
-// Tirar e colocar item no inicio e no final é O(1)
-// Diferentemente do vector a inserção no inicio é O(1) e não O(n)
-
 #include <bits/stdc++.h>
 using namespace std;
 
