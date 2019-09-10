@@ -1,14 +1,15 @@
 # Recursivo
-A função chama ela mesma
-
-Complexidade: O(2<sup>n</sup>), se você aproximar que f(n) tem mesmo tamanho que f(n-1)
+A função chama ela mesma\
+Complexidade: O(2<sup>n</sup>), se você aproximar que f(n) tem mesmo tamanho que f(n-1)\
+Chega ao caso base no mínimo F(n) vezes
 
 # Programação Dinâmica
+Diminuimos o gasto da recursão usando memorização dos estados já alcançados\
 É uma recursão, porém os valores que já encontramos é salvo em um array\
 Útil para os casos em que não sabemos como sair da implementação recursiva\
 Pode ser complicado usar se o array tiver que ser muito grande
 
-Complexidade: O(?), pois a complexidade é igual à uma dfs em um grafo
+Complexidade: O(n + 2n), ou seja O(n), pois a complexidade é igual à uma dfs em um grafo (numero de vertices (que a função é executada) + numero de transições(quntas vezes uma função chama outra))
 
 # Iterativa
 Basicamente um for\
