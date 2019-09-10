@@ -4,19 +4,14 @@ using namespace std;
 #define INF 0x3f3f3f3f
 const int MAXN = 1e5;
 
-struct par
-{
-    int indice, valor;
-
-    bool operator<(const par &that) const
-    {
-        return this->valor > that.valor;
-    }
-};
-
 struct aresta
 {
     int vertice, peso;
+
+    bool operator<(const aresta &that) const
+    {
+        return this->peso > that.peso;
+    }
 };
 
 int n, m;
@@ -26,15 +21,15 @@ int distancia[MAXN];
 void dijkstra(int pos)
 {
     memset(distancia, INF, sizeof(distancia));
-    priority_queue<par> pq;
+    priority_queue<aresta> pq;
     distancia[pos] = 0;
 
     pq.push({pos, 0});
 
     while (!pq.empty())
     {
-        int u = pq.top().indice;
-        int d = pq.top().valor;
+        int u = pq.top().vertice;
+        int d = pq.top().peso;
         cout << u << endl;
         pq.pop();
 
