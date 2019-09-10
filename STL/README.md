@@ -4,6 +4,8 @@
 - Fila: Tira do inicio e coloca no final em O(1)
 - Deque (Double ended queue): Tira e coloca no inicio e no final em O(1)
 - Par: Associa dois valores
+- Set: Representa um conjunto em que não há item repetido; inserir/remover/buscar é O(log(n))\
+  Está sempre ordenado
 
 # Iteradores
 Disponivel para maioria dos contâiners do STL\
