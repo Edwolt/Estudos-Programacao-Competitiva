@@ -34,6 +34,7 @@ void iteradores()
 void bound()
 {
     vector<int> v = {1, 2, 3, 3, 3, 5, 6, 6};
+    // Vector precisa esta ordenado
     auto low = lower_bound(v.begin(), v.end(), 3); // iterador a partir do elemento menor que 3
     auto up = upper_bound(v.begin(), v.end(), 3);  // iterador a partir do elemento maior que 3
 
