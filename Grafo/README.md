@@ -13,3 +13,7 @@ Bom para encontrar distâncias
 - Dijkstra\
 Calcula o peso para chegar em determinado nó
 Parecido com a BFS, porém usa fila de prioridade
+
+# MST (Árvore Geradora Miníma)
+- Prim\
+Adiciona sempre a aresta de menor valor ao grafo que já faz parte da componente que faz parte
