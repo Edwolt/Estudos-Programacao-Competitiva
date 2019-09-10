@@ -3,7 +3,7 @@ using namespace std;
 
 const int MAXN = 1e5;
 
-int n, m; // Número de vertices e número de arestas
+int n, m;
 vector<int> grafo[MAXN];
 bool visitado[MAXN];
 
