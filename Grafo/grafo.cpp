@@ -5,7 +5,7 @@ using namespace std;
 
 const int MAXN = 1e5;
 
-int n, m; // Número de celulas e número de arestas
+int n, m; // Número de vertices e número de arestas
 vector<int> grafo[MAXN];
 
 int main()
