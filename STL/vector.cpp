@@ -35,7 +35,7 @@ void bound()
 {
     vector<int> v = {1, 2, 3, 3, 3, 5, 6, 6};
     auto low = lower_bound(v.begin(), v.end(), 3); // iterador a partir do elemento menor que 3
-    auto up = upper_bound(v.begin(), v.end(), 3); // iterador a partir do elemento maior que 3
+    auto up = upper_bound(v.begin(), v.end(), 3);  // iterador a partir do elemento maior que 3
 
     int cont = up - low;
 }
@@ -81,4 +81,8 @@ int main()
     for (int x : v)
         cout << x << " ";
     cout << endl;
+
+    int array[100]; // Ordenando Array
+    sort(begin(array), end(array));
+    sort(array, array + 100);
 }
