@@ -14,6 +14,25 @@ void construtores()
     vector<vector<int>> mat(n, vector<int>(n, 0)); // Matriz n por n com tudo igual a zero
 }
 
+void iteradores()
+{
+    // Similar a ponteiro para a STL
+    // i é um iterador de vetor
+
+    vector<int> v = {1, 2, 3, 4, 5};
+    for (auto i = v.begin(); i < v.end(); i++) // Não vale para qualquer STL
+    {
+        cout << *i << " ";
+    }
+    cout << endl;
+
+    for (auto i = v.begin(); i != v.end(); i++) // Vale para qualquer STL
+    {
+        cout << *i << " ";
+    }
+    cout << endl;
+}
+
 int main()
 {
     vector<int> v = {1, 2, 3, 4, 5};
