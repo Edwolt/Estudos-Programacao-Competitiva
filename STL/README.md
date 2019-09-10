@@ -17,7 +17,7 @@ for(auto i = stl.begin(); i != stl.end(); i++)
     /* Código */
 }
 ```
-Ou assim
+Ou assim:
 ```cpp
 for(auto i : stl)
 {
@@ -28,4 +28,4 @@ for(auto i : stl)
 Existem também os iteradores reversos (stl.rbegin(), stl.rend()): quando incrementados aponta para posição anterior
 
 # Sort
-O `sort` está disponivel para qualquer `strct` com a função `operator<` definido
+O `sort` está disponivel para qualquer `struct` com a função `operator<` definido
