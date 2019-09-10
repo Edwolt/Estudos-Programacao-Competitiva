@@ -32,6 +32,10 @@ Associa dois valores
 Representa um conjunto em que não há item repetido; inserir/remover/buscar é O(log(n))\
 Está sempre ordenado
 
+- Fila de Prioridade\
+O maior elemento fica na frente\
+Acessa primeiro elemento em O(1) e insere em O(log(n))
+
 
 # Iteradores
 Disponivel para maioria dos contâiners do STL\
