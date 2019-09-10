@@ -43,8 +43,8 @@ Suas funções são em O(log(n))\
 A chave precisa ter `operator<` definido\
 Ótimo para questões de frequência com vetores espassos, pois vetor de frequencia de tamnho 10<sup>10</sup> consome muita memória
 
-- Unordered_set e Unordered_map
-Operações são em O(1)
+- Unordered_set e Unordered_map\
+Operações são em O(1)\
 Usam hash, por isso pode não dar certo em contests com fase de hack
 
 
