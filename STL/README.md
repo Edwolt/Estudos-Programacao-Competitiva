@@ -32,6 +32,21 @@ Associa dois valores
 Representa um conjunto em que não há item repetido; inserir/remover/buscar é O(log(n))\
 Está sempre ordenado
 
+- Fila de Prioridade\
+O maior elemento fica na frente\
+Acessa primeiro elemento em O(1) e insere em O(log(n))
+
+- Mapa\
+Armazena apenas valores das posições necessárias, assim não enche a estrutura com zeros ou valores desnecessários\
+Tem uma chave e um valor (organiza em ordem crescente das chaves)\
+Suas funções são em O(log(n))\
+A chave precisa ter `operator<` definido\
+Ótimo para questões de frequência com vetores espassos, pois vetor de frequencia de tamnho 10<sup>10</sup> consome muita memória
+
+- Unordered_set e Unordered_map
+Operações são em O(1)
+Usam hash, por isso pode não dar certo em contests com fase de hack
+
 
 # Iteradores
 Disponivel para maioria dos contâiners do STL\
