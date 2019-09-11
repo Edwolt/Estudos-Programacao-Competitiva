@@ -65,7 +65,7 @@ int main()
     {
         if (!vis[i])
         {
-            cout << -1 << endl;
+            cout << "Não foi possível visitar todos o vértices" << endl;
             return 0;
         }
     }
