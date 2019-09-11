@@ -20,3 +20,7 @@ Adiciona sempre a aresta de menor valor ao grafo que já faz parte da componente
 
 - Kruskal\
 Cada vértice começa sendo uma sub-árvores, e a cada iteração é adicionados todas as arestas com menor valor
+
+- Boruvka\
+Consegue mexer com pesos negativos\
+(Tem uma implementação muito dificil, por isso não está aqui)
