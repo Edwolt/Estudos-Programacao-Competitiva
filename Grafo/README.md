@@ -11,7 +11,7 @@ Bom para encontrar distâncias
 
 # Arestas com peso
 - Dijkstra\
-Calcula o peso para chegar em determinado nó
+Calcula o peso para chegar em determinado nó\
 Parecido com a BFS, porém usa fila de prioridade
 
 # MST (Árvore Geradora Miníma)
