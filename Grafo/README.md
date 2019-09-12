@@ -16,7 +16,8 @@ Parecido com a BFS, porém usa fila de prioridade
 
 # MST (Árvore Geradora Miníma)
 - Prim\
-Adiciona sempre a aresta de menor valor ao grafo que já faz parte da componente que faz parte
+Adiciona sempre a aresta de menor valor ao grafo que já faz parte da componente que faz parte\
+Não funciona com grafo direcionados
 
 - Kruskal\
 Cada vértice começa sendo uma sub-árvores, e a cada iteração é adicionados todas as arestas com menor valor
