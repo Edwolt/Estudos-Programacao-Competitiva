@@ -18,3 +18,6 @@ Explica como funciona alguns dos contâiners presente na Standad Template Librar
 
 ### Grafo
 Alguns algoritmos para manipular grafos
+
+## Teoria dos Números
+Divisores
