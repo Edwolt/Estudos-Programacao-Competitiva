@@ -38,3 +38,6 @@ Se em qualquer parte da com acontecer um overflow O resultado já estará atrapa
 ```
 `INF` cabe em um `int` e `INF + INF` também\
 `INF * INF` cabe em um `long`
+
+# Variaveis Globais
+Variaveis globais são incializadas com 0
