@@ -19,5 +19,8 @@ Explica como funciona alguns dos contâiners presente na Standad Template Librar
 ## Grafo
 Alguns algoritmos para manipular grafos
 
+## Range
+Algoritmos para fazer rapidamente Range_Querry e Range_Update
+
 ## Teoria dos Números
 Divisores
