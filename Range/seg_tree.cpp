@@ -1,5 +1,3 @@
-// Não Testado
-
 #include <bits/stdc++.h>
 using namespace std;
 
@@ -14,7 +12,7 @@ void build(int p, int l, int r)
 {
     if (l == r)
     {
-        seg[p = v[l]];
+        seg[p] = v[l];
     }
     else
     {
@@ -56,7 +54,7 @@ void update(int pos, int valor)
 
 int range_query(int p, int l, int r, int a, int b)
 {
-    if (l > a && r <= b)
+    if (l >= a && r <= b)
     {
         return seg[p]; // Encaixa interamente no range
     }
@@ -72,4 +70,25 @@ int range_query(int p, int l, int r, int a, int b)
 int range_query(int a, int b)
 {
     return range_query(1, 1, n, a, b);
+}
+
+int main()
+{
+    cin >> n;
+    for(int i = 0; i < n; i++)
+    {
+        cin >> v[i];
+    }
+    
+    build();
+    
+    int k, c;
+    cin >> k >> c;
+    update(k, c);
+    int l, r;
+    cin >> l;
+    cin >> r;
+    
+    cout << range_query(l, r);
+    
 }
