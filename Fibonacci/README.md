@@ -82,7 +82,7 @@ F(n) = a + b
 -->
 
 # Fórmula
-- É muito difícil que essa implementação seja viável, pois requer que tenha a formula de antemão
+- É muito difícil que essa implementação seja viável durante uma competição, pois requer resolver uma equação de recorrência
 - Tendo a fórmula, é possível provar que ela funciona com indução matemática
 
 - Complexidade: O(1)
