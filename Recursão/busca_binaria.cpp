@@ -10,12 +10,13 @@ int n;
 
 void recursiva(int l, int r, int chave)
 {
-    int mid = (l + r) / 2;
     if (l > r)
     {
         cout << "Recursiva: NÃO" << endl;
         return;
     }
+    
+    int mid = (l + r) / 2;
 
     if (vetor[mid] == chave)
     {
@@ -72,6 +73,6 @@ int main()
     }
     cout << endl;
 
-    recursiva(0, n, chave);
-    iterativa(0, n, chave);
+    recursiva(0, n-1, chave);
+    iterativa(0, n-1, chave);
 }
