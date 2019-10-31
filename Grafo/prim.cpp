@@ -3,11 +3,9 @@ using namespace std;
 
 const int MAXN = 1e6;
 
-struct edge
-{
+struct edge {
     int vertice, peso;
-    bool operator<(const edge &that) const
-    {
+    bool operator<(const edge &that) const {
         return this->peso > that.peso;
     }
 };
@@ -17,29 +15,24 @@ int n, m;
 bool vis[MAXN];
 vector<edge> grafo[MAXN];
 
-int prim()
-{
+int prim() {
     priority_queue<edge> pq;
 
-    for (edge i : grafo[0])
-    {
+    for (edge i : grafo[0]) {
         pq.push(i);
     }
     vis[0] = true;
     int total = 0;
 
-    while (!pq.empty())
-    {
+    while (!pq.empty()) {
         edge e = pq.top();
         pq.pop();
 
-        if (!vis[e.vertice])
-        {
+        if (!vis[e.vertice]) {
             vis[e.vertice] = true;
             total += e.peso;
 
-            for (edge i : grafo[e.vertice])
-            {
+            for (edge i : grafo[e.vertice]) {
                 pq.push(i);
             }
         }
@@ -47,13 +40,11 @@ int prim()
     return total;
 }
 
-int main()
-{
+int main() {
     cin >> n >> m;
 
     int u, v, w;
-    for (int i = 0; i < m; i++)
-    {
+    for (int i = 0; i < m; i++) {
         vis[i] = false;
         cin >> u >> v >> w;
         grafo[u].push_back({v, w});
@@ -61,10 +52,8 @@ int main()
     }
 
     int res = prim();
-    for (int i = 0; i < n; i++)
-    {
-        if (!vis[i])
-        {
+    for (int i = 0; i < n; i++) {
+        if (!vis[i]) {
             cout << "Não foi possível visitar todos o vértices" << endl;
             return 0;
         }

@@ -2,23 +2,19 @@
 using namespace std;
 
 template <typename T>
-T maximo(T a, T b)
-{
-    if (a >= b)
-    {
+T maximo(T a, T b) {
+    if (a >= b) {
         return a;
     }
     return b;
 }
 
 template <typename U>
-struct vetor_3D
-{
+struct vetor_3D {
     U x, y, z;
 };
 
-int main()
-{
+int main() {
     printf("Máximo(  1  ,  2  ) = %d\n", maximo(1, 2));
     printf("Máximo(  2  ,  1  ) = %d\n", maximo(1, 2));
     printf("Máximo(  2  ,  1  ) = %d\n", maximo<int>(1, 2));

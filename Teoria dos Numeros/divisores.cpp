@@ -3,18 +3,14 @@ using namespace std;
 
 const int MAXN = 1e5;
 
-vector<int> divisores(int n)
-{
+vector<int> divisores(int n) {
     vector<int> div;
 
-    for (int i = 2; i * i <= n; i++)
-    {
-        if (n % i == 0)
-        {
+    for (int i = 2; i * i <= n; i++) {
+        if (n % i == 0) {
             div.push_back(i);
             int complementar = n / i;
-            if (complementar != i)
-            {
+            if (complementar != i) {
                 div.push_back(complementar);
             }
         }
@@ -22,15 +18,13 @@ vector<int> divisores(int n)
     return div;
 }
 
-int main()
-{
+int main() {
     int n;
     cin >> n;
 
     vector<int> div = divisores(n);
     sort(div.begin(), div.end());
-    for (int i : div)
-    {
+    for (int i : div) {
         cout << i << " ";
     }
 

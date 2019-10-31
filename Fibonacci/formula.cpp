@@ -4,16 +4,15 @@ using namespace std;
 #define ll unsigned long long
 #define ld long double
 
-ll fibonacci(int n)
-{
+ll fibonacci(int n) {
     ld res = (1 / sqrt(5)) *
-                      (pow((1 + sqrt(5)) / 2, n) -
-                       pow((1 - sqrt(5)) / 2, n));
+             (pow((1 + sqrt(5)) / 2, n) -
+              pow((1 - sqrt(5)) / 2, n));
+
     return (ll)res;
 }
 
-int main()
-{
+int main() {
     ll n;
     cin >> n;
 

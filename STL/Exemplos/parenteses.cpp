@@ -5,35 +5,27 @@ using namespace std;
 
 stack<char> parentese;
 
-void colocar(char b)
-{
-    if (b == '(' || b == '[' || b == '{')
-    {
+void colocar(char b) {
+    if (b == '(' || b == '[' || b == '{') {
         parentese.push(b);
         return;
     }
-    if (b == ')')
-    {
-        if (parentese.empty() || parentese.top() != '(')
-        {
+    if (b == ')') {
+        if (parentese.empty() || parentese.top() != '(') {
             cout << "Invalido" << endl;
             exit(0);
         }
         parentese.pop();
     }
-    if (b == ']')
-    {
-        if (parentese.empty() || parentese.top() != '[')
-        {
+    if (b == ']') {
+        if (parentese.empty() || parentese.top() != '[') {
             cout << "Invalido" << endl;
             exit(0);
         }
         parentese.pop();
     }
-    if (b == '}')
-    {
-        if (parentese.empty() || parentese.top() != '{')
-        {
+    if (b == '}') {
+        if (parentese.empty() || parentese.top() != '{') {
             cout << "Invalido" << endl;
             exit(0);
         }
@@ -41,18 +33,15 @@ void colocar(char b)
     }
 }
 
-int main()
-{
+int main() {
     string str;
     cin >> str;
 
-    for (char c : str)
-    {
+    for (char c : str) {
         colocar(c);
     }
 
-    if (parentese.empty())
-    {
+    if (parentese.empty()) {
         cout << "Valido" << endl;
         return 0;
     }

@@ -7,22 +7,18 @@ int n, m;
 vector<int> grafo[MAXN];
 int distancia[MAXN];
 
-void bfs(int pos)
-{
+void bfs(int pos) {
     memset(distancia, -1, sizeof(distancia));
     queue<int> q;
     q.push(pos);
     distancia[pos] = 0;
 
-    while (!q.empty())
-    {
+    while (!q.empty()) {
         int atual = q.front();
         q.pop();
 
-        for (int proximo : grafo[atual])
-        {
-            if (distancia[proximo] == -1)
-            {
+        for (int proximo : grafo[atual]) {
+            if (distancia[proximo] == -1) {
                 distancia[proximo] = distancia[atual] + 1;
                 q.push(proximo);
             }
@@ -30,12 +26,10 @@ void bfs(int pos)
     }
 }
 
-int main()
-{
+int main() {
     cin >> n >> m;
 
-    for (int i = 0; i < n; i++)
-    {
+    for (int i = 0; i < n; i++) {
         int u, v;
         cin >> u >> v;
         grafo[u].push_back(v);
