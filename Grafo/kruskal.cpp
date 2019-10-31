@@ -3,27 +3,20 @@ using namespace std;
 
 const int MAXN = 100;
 
-struct union_find
-{
+struct union_find {
     int parent[MAXN];
-    vector<int> rank = vector<int>(1, MAXN); // Altura da subarvore
+    vector<int> rank = vector<int>(1, MAXN);  // Altura da subarvore
 
-    union_find()
-    {
-        for (int i = 0; i < MAXN; i++)
-        {
+    union_find() {
+        for (int i = 0; i < MAXN; i++) {
             parent[i] = i;
         }
     }
 
-    int find(int x)
-    {
-        if (parent[x] == x)
-        {
+    int find(int x) {
+        if (parent[x] == x) {
             return x;
-        }
-        else
-        {
+        } else {
             return find(parent[x]);
         }
     }
@@ -34,35 +27,28 @@ struct union_find
     //     parent[find[x]] = find(y);
     // }
 
-    void join(int x, int y)
-    {
+    void join(int x, int y) {
         int raiz_x = find(x);
         int raiz_y = find(y);
 
-        if (raiz_x == raiz_y)
-        {
+        if (raiz_x == raiz_y) {
             return;
         }
 
-        if (rank[raiz_x] < rank[raiz_y])
-        {
+        if (rank[raiz_x] < rank[raiz_y]) {
             parent[raiz_x] = raiz_y;
             rank[raiz_y] = max(rank[raiz_y], rank[raiz_x] + 1);
-        }
-        else
-        {
+        } else {
             parent[raiz_y] = raiz_x;
             rank[raiz_x] = max(rank[raiz_x], rank[raiz_y] + 1);
         }
     }
 };
 
-struct edge
-{
+struct edge {
     int u, v, w;
 
-    bool operator<(edge &that) const
-    {
+    bool operator<(edge &that) const {
         return this->w < that.w;
     }
 };
@@ -71,16 +57,13 @@ int n, m;
 vector<edge> grafo[MAXN];
 vector<edge> mst;
 
-int kruskal()
-{
+int kruskal() {
     union_find uf;
     int total = 0;
     vector<edge> edges;
 
-    for (auto v : grafo)
-    {
-        for (auto e : v)
-        {
+    for (auto v : grafo) {
+        for (auto e : v) {
             edges.push_back(e);
         }
     }
@@ -89,13 +72,11 @@ int kruskal()
 
     int added = 0;
 
-    for (auto e : edges)
-    {
+    for (auto e : edges) {
         int conj1 = uf.find(e.u);
         int conj2 = uf.find(e.v);
 
-        if (conj1 == conj2)
-        {
+        if (conj1 == conj2) {
             continue;
         }
 
@@ -104,8 +85,7 @@ int kruskal()
         added++;
         mst.push_back(e);
 
-        if (added == n - 1)
-        {
+        if (added == n - 1) {
             break;
         }
     }
@@ -113,11 +93,9 @@ int kruskal()
     return total;
 }
 
-int main()
-{
+int main() {
     cin >> n >> m;
-    for (int i = 0; i < m; i++)
-    {
+    for (int i = 0; i < m; i++) {
         int u, v, w;
         cin >> u >> v >> w;
         grafo[u].push_back({u, v, w});

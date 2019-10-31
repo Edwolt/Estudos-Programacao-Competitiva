@@ -9,8 +9,7 @@ ll vet[MAXN];
 int n;
 ll x;
 
-ll solve(int pos, ll soma)
-{
+ll solve(int pos, ll soma) {
     // if(pos == n && soma == x) return 1;
     // if(pos == n && soma != x) return 0;
     if (pos == n) return soma == x;

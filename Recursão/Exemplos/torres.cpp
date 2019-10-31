@@ -7,8 +7,7 @@ using namespace std;
 
 #define ll unsigned long long
 
-ll solve(ll n1, ll n2, ll n3)
-{
+ll solve(ll n1, ll n2, ll n3) {
     if (n1 == 0 || n2 == 0 || n3 == 0)
         return 1;
     ll res = 0;
@@ -23,9 +22,8 @@ ll solve(ll n1, ll n2, ll n3)
     return res;
 }
 
-int main()
-{
+int main() {
     int n1, n2, n3;
-    cin >> n1 >>n2 >> n3;
+    cin >> n1 >> n2 >> n3;
     cout << solve(n1, n2, n3) << endl;
 }

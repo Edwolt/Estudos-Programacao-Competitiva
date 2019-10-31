@@ -4,12 +4,10 @@ using namespace std;
 #define INF 0x3f3f3f3f
 const int MAXN = 1e5;
 
-struct aresta
-{
+struct aresta {
     int vertice, peso;
 
-    bool operator<(const aresta &that) const
-    {
+    bool operator<(const aresta &that) const {
         return this->peso > that.peso;
     }
 };
@@ -18,16 +16,14 @@ int n, m;
 vector<aresta> grafo[MAXN];
 int distancia[MAXN];
 
-void dijkstra(int pos)
-{
+void dijkstra(int pos) {
     memset(distancia, INF, sizeof(distancia));
     priority_queue<aresta> pq;
     distancia[pos] = 0;
 
     pq.push({pos, 0});
 
-    while (!pq.empty())
-    {
+    while (!pq.empty()) {
         int u = pq.top().vertice;
         int d = pq.top().peso;
         cout << u << endl;
@@ -37,13 +33,11 @@ void dijkstra(int pos)
         if (d > distancia[u])
             continue;
 
-        for (int i = 0; i < grafo[u].size(); i++)
-        {
+        for (int i = 0; i < grafo[u].size(); i++) {
             int v = grafo[u][i].vertice;
             int w = grafo[u][i].peso;
 
-            if (distancia[u] + w < distancia[v])
-            {
+            if (distancia[u] + w < distancia[v]) {
                 distancia[v] = distancia[u] + w;
                 pq.push({v, distancia[v]});
             }
@@ -51,12 +45,10 @@ void dijkstra(int pos)
     }
 }
 
-int main()
-{
+int main() {
     cin >> n >> m;
 
-    for (int i = 0; i < m; i++)
-    {
+    for (int i = 0; i < m; i++) {
         int u, v, w;
         cin >> u >> v >> w;
 
@@ -65,8 +57,7 @@ int main()
     }
 
     dijkstra(0);
-    for (int i = 0; i < n; i++)
-    {
+    for (int i = 0; i < n; i++) {
         printf("%d dista %d\n", i, distancia[i]);
     }
 }

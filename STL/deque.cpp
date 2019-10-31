@@ -1,8 +1,7 @@
 #include <bits/stdc++.h>
 using namespace std;
 
-int main()
-{
+int main() {
     deque<int> dq;
 
     // Retona valor
