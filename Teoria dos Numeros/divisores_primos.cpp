@@ -23,8 +23,6 @@ int main() {
     vector<int> div = divisores_primos(n);
     sort(div.begin(), div.end());
 
-    for (int i : div) {
-        cout << i << " ";
-    }
+    for (int i : div) cout << i << " ";
     cout << endl;
 }
