@@ -3,9 +3,7 @@ using namespace std;
 
 template <typename T>
 T maximo(T a, T b) {
-    if (a >= b) {
-        return a;
-    }
+    if (a >= b) return a;
     return b;
 }
 

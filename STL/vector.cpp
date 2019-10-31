@@ -16,14 +16,12 @@ void iteradores() {
     // i é um iterador de vetor
 
     vector<int> v = {1, 2, 3, 4, 5};
-    for (auto i = v.begin(); i < v.end(); i++)  // Não vale para qualquer STL
-    {
+    for (auto i = v.begin(); i < v.end(); i++) {  // Não vale para qualquer STL
         cout << *i << " ";
     }
     cout << endl;
 
-    for (auto i = v.begin(); i != v.end(); i++)  // Vale para qualquer STL
-    {
+    for (auto i = v.begin(); i != v.end(); i++) {  // Vale para qualquer STL
         cout << *i << " ";
     }
     cout << endl;
@@ -68,13 +66,11 @@ int main() {
     v.push_back(-1);
 
     sort(v.begin(), v.end());  // crescente
-    for (int x : v)
-        cout << x << " ";
+    for (int x : v) cout << x << " ";
     cout << endl;
 
     sort(v.rbegin(), v.rend());  // decrescente
-    for (int x : v)
-        cout << x << " ";
+    for (int x : v) cout << x << " ";
     cout << endl;
 
     int array[100];  // Ordenando Array

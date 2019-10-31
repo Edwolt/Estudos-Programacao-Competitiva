@@ -2,9 +2,7 @@
 using namespace std;
 
 int mdc(int a, int b) {
-    if (b == 0) {
-        return a;
-    }
+    if (b == 0) return a;
     return (mdc(b, a % b));
 }
 
