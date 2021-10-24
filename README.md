@@ -24,3 +24,4 @@ Algoritmos para fazer rapidamente Range_Querry e Range_Update
 
 ## Teoria dos Números
 Divisores
+

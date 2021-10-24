@@ -1,5 +1,5 @@
 # Analise de Complexidade
-10<sup>8</sup> operações por segundo é uma boa aproximação para o número de operações que o c++ é capaz de fazer por segundo
+$10^8$ operações por segundo é uma boa aproximação para o número de operações que o c++ é capaz de fazer por segundo
 
 # Fast Cin Cout
 Torna o `cin` e o `cout` um pouco mais rápido desvinculando-os do `scanf` e `printf`\
@@ -18,7 +18,7 @@ cout << fixed << setprecision(10) << res << endl;
 Se o importante é saber o número de vezes que um número aparece, array de frequência é uma boa\
 Se tiver muitos valores, pode ser necessário usar um map
 
-# Questões com 10<sup>9</sup>+7
+# Questões com $10^9+7$
 Esse número serve para fazer não da overflow\
 Use as propiedades:
 
