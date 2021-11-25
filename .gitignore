@@ -1,9 +1,5 @@
 *.directory
 
-# vscode
-.vscode/
-*/.vscode/
-
 # Prerequisites
 *.d
 
@@ -36,4 +32,3 @@
 *.exe
 *.out
 *.app
-
