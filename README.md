@@ -3,7 +3,7 @@
 Contém códigos comumente usados para que possa ser acessível facilmente
 
 # C++
-- [Programação Competitiva](Programação%20Competitiva/Fibonacci/README.md)
+- [Programação Competitiva](Programação%20Competitiva/README.md)
 
 # C
 - [Algoritimos de Ordenação](Algoritmos%20de%20Ordenação/README.md)
